@@ -10,12 +10,6 @@
 //}
 
 
-
-
-
-
-
-
 #include <stdio.h>
 #include <iostream>
 #include <glad/glad.h>
