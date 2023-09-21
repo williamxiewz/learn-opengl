@@ -14,13 +14,13 @@ Xcode工程-Build Settings-Search Paths -Header Search Paths
 
 Build Phases-Link Binary With Libraries
 
-```c
+```cpp
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 ```
 
 
-
+```cpp
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
@@ -60,4 +60,4 @@ int main(void ) {
     glfwTerminate();
     exit(EXIT_SUCCESS);
 }
-
+```cpp
