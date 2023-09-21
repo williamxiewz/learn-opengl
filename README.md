@@ -1,24 +1,35 @@
 # learn-opengl 
-
 使用xCode搭建OpenGL开发环境
-下载安装库文件
-创建xCode工程，与第三方库文件链接
-开发OpenGL简单功能
-1、安装GLFW，和GLEW库
+
+#1.下载安装库文件
+
 通过Homebrew工具安装
 
-再安装glfw和glew库
+```shell
+brew install
+```
+#安装glfw和glew库
+
+```shell
+brew install glfw
+brew install glew
+```
+
 
 
 Xcode工程-Build Settings-Search Paths -Header Search Paths
 
 Build Phases-Link Binary With Libraries
 
+
+
 ```cpp
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 ```
 
+#开发OpenGL简单功能
+#opengl hello world
 
 ```cpp
 #include <GL/glew.h>
