@@ -14,9 +14,10 @@ Xcode工程-Build Settings-Search Paths -Header Search Paths
 
 Build Phases-Link Binary With Libraries
 
+```c
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
-
+```
 
 
 
