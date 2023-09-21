@@ -60,4 +60,4 @@ int main(void ) {
     glfwTerminate();
     exit(EXIT_SUCCESS);
 }
-```cpp
+```
