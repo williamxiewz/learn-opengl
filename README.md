@@ -43,7 +43,8 @@ Build Phases-Link Binary With Libraries
 #5. 签名库
 
 codesign -f -s "你的证书" /usr/local/lib/*.dylib
-```
+
+```shell
 codesign -f -s "Apple Development: bin xie (36RT35CB23)" /usr/local/Cellar/glfw/3.3.8/lib/*.dylib
 codesign -f -s "Apple Development: bin xie (36RT35CB23)" /usr/local/Cellar/glew/2.2.0_1/lib/*.dylib
 ```
