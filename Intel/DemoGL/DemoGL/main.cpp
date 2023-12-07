@@ -1,15 +1,3 @@
-//#include <iostream>
-//#define GLEW_STATIC
-//#include <GL/glew.h>
-//#include <GLFW/glfw3.h>
-//
-//int main(int argc, const char * argv[]) {
-//    // insert code here...
-//    std::cout << "Hello, World!\n";
-//    return 0;
-//}
-
-
 #include <stdio.h>
 #include <iostream>
 #include <glad/glad.h>
