@@ -5,7 +5,9 @@
 
 
 int main(int argc, char **argv){
-    using std::cout;    using std::endl;
+    using std::cout;    
+    using std::endl;
+    
     glfwInit();
     //    主版本
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
