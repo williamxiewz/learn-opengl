@@ -16,42 +16,57 @@ GLAD：是一个开源的库，功能跟 GLEW 类似。GLAD 使用了一个在�
 ```shell
 brew install
 ```
+
 #2.安装glfw和glew库
 
 ```shell
 brew install glfw
+
 brew install glew
 ```
-3.  生成配置glad
+
+3. 生成配置glad
 
 glad的配置与大多数的开源库有些不同
-glad使用 在线服务，https://glad.dav1d.de/，告诉glad需要定义的OpenGL版本，
-会根据这个版本加载所有的相关的函数
+
+glad使用在线服务，https://glad.dav1d.de/， 告诉glad需要定义的OpenGL版本，会根据这个版本加载所有的相关的函数
 将语言(Language)设置为C/C++，
+
 在API选项中，选择3.3以上的OpenGL(gl)版本。之后将模式(Profile)设置为Core，
 并且保证生成加载器(Generate a loader)的选项是选中的。
-现在可以先忽略拓展(Extensions)中的内容。都选择完之后，点击生成(Generate)按钮来生成库文件。
+现在可以先忽略拓展(Extensions)中的内容
+。都选择完之后，点击生成(Generate)按钮来生成库文件。
 
-```
+
 将两个头文件目录（glad和KHR）复制到/usr/local/include，并添加glad.c到工程中
+
+```shell
+/usr/local/include
+
 ```
 
 #4. 配置路径
-Xcode工程-Build Settings-Search Paths -Header Search Paths
 
+Xcode工程-Build Settings-Search Paths -Header Search Paths
 Build Phases-Link Binary With Libraries
+
+```shell
+Header Search Paths
+```
 #5. 签名库
 
+```shell
 codesign -f -s "你的证书" /usr/local/lib/*.dylib
+```
 
 ```shell
 codesign -f -s "Apple Development: bin xie (36RT35CB23)" /usr/local/Cellar/glfw/3.3.8/lib/*.dylib
 codesign -f -s "Apple Development: bin xie (36RT35CB23)" /usr/local/Cellar/glew/2.2.0_1/lib/*.dylib
 ```
 
-
+```
 /usr/local/opt/glew/lib/libGLEW.2.2.dylib
-
+```
 
 
 
