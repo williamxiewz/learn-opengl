@@ -9,15 +9,15 @@ int main(int argc, char **argv){
     using std::endl;
     
     glfwInit();
-    //    主版本
+    //主版本
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-    //    次版本
+    //次版本
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-    //    告诉glfw 我们使用的是core_profile 核心模块
+    //告诉glfw 我们使用的是core_profile 核心模块
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-    //    向前兼容
+    //向前兼容
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
-    //    创建一个GLFW 窗口   宽 高  窗口名字  后边两个暂时不用管
+    //创建一个GLFW 窗口   宽 高  窗口名字  后边两个暂时不用管
     GLFWwindow* window = glfwCreateWindow(800, 600, "LearnOpenGL", NULL, NULL);
     if (window == NULL)
     {
